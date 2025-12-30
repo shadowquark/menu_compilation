@@ -1,0 +1,13 @@
+[book]
+title = "食单集注"
+authors = ["陰陽魚, "]
+description = "汇总经典菜品在不同菜谱中的做法，并利用科学知识对传统做法进行解析。"
+language = "zh"
+
+[output.html]
+theme = "ayu"          # 设置默认主题 (可选: light, coal, navy, ayu)
+default-theme = "dark" # 首次访问读者的默认主题
+preferred-dark-theme = "ayu"
+site-url = "/menu_compilation/"  # 如果你部署在 GitHub Pages 子路径，这里要填仓库名
+git-repository-url = "https://github.com/shadowquark/menu_compilation" # 在页面显示 GitHub 链接
+
