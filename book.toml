@@ -1,7 +1,5 @@
 [book]
 title = "食单集注"
-authors = ["陰陽魚, "]
-description = "汇总经典菜品在不同菜谱中的做法，并利用科学知识对传统做法进行解析。"
 language = "zh"
 
 [output.html]
