@@ -31,13 +31,15 @@ h1, h2, h3, h4 {
 .sidebar,
 .sidebar .chapter a,
 .sidebar .chapter li.active > a,
-.sidebar .chapter li a:hover,
-.sidebar .chapter ol li a {
+.sidebar .chapter li a:hover {
     font-family: 'yuSide', serif !important;
-    font-size: 18px !important;
+    font-weight: normal; 
 }
 
-.sidebar .chapter > li > a {
-    font-size: 18px !important;
+.sidebar .chapter a,
+.sidebar .chapter li.active > a,
+.sidebar .chapter li a:hover {
+    font-size: 18px !important; 
+    line-height: 2.0 !important;
 }
 
