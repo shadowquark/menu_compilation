@@ -2,17 +2,16 @@
     display: none !important;
 }
 
-
 @font-face {
-    font-family: 'yu';  
-    src: 'FZXSSK.ttf'; 
-    font-display: swap; 
+    font-family: 'yu';
+    src: url('FZXSSK.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'yuHead';  
-    src: 'HanliOldstyle.ttf'; 
-    font-display: swap; 
+    font-family: 'yuHead';
+    src: url('HanliOldstyle.ttf') format('truetype');
+    font-display: swap;
 }
 
 body {
