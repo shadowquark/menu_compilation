@@ -5,13 +5,13 @@
 
 @font-face {
     font-family: 'yu';  
-    src: url('FZXSSK.ttf'); 
+    src: 'FZXSSK.ttf'; 
     font-display: swap; 
 }
 
 @font-face {
     font-family: 'yuHead';  
-    src: url('HanliOldstyle.ttf'); 
+    src: 'HanliOldstyle.ttf'; 
     font-display: swap; 
 }
 
