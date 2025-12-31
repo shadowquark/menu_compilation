@@ -33,7 +33,6 @@ h1, h2, h3, h4 {
 .sidebar .chapter li.active > a,
 .sidebar .chapter li a:hover {
     font-family: 'yuSide', serif !important;
-    font-size: 18px !important;
-    line-height: 1.5 !important;
+    font-weight: normal;
 }
 
