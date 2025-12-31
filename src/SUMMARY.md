@@ -3,7 +3,7 @@
 - [序](introduction.md)
 - [第一编　大菜系](chapter1.md)
     - [第一章　川菜](test1.md)
-        - 海味类
+        - [海味类](test2.md)
             - [烧黄肉翅](./sichuan/烧黄肉翅.md)
     - [第二章　鲁菜](test3.md)
     - [第三章　淮扬菜](test5.md)
