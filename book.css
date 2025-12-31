@@ -5,19 +5,19 @@
 @font-face {
     font-family: 'yu';
     src: url('FZXSSK.ttf') format('truetype');
-    font-display: swap;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'yuHead';
     src: url('HanliOldstyle.ttf') format('truetype');
-    font-display: swap;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'yuSide';
     src: url('qiji-fallback.ttf') format('truetype');
-    font-display: swap;
+    font-display: block;
 }
 
 body {
@@ -33,6 +33,6 @@ h1, h2, h3, h4 {
 .sidebar .chapter li.active > a,
 .sidebar .chapter li a:hover {
     font-family: 'yuSide', serif !important;
-    font-weight: normal; 
+    font-size: 18px !important;
 }
 
