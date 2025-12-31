@@ -36,10 +36,3 @@ h1, h2, h3, h4 {
     font-weight: normal; 
 }
 
-.sidebar .chapter a,
-.sidebar .chapter li.active > a,
-.sidebar .chapter li a:hover {
-    font-size: 18px !important; 
-    line-height: 2.0 !important;
-}
-
