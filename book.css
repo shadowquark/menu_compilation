@@ -1,0 +1,26 @@
+.sidebar .chapter > li > ol > li > ol > li > ol > li > ol {
+    display: none !important;
+}
+
+
+@font-face {
+    font-family: 'yu';  
+    src: url('FZXSSK.ttf'); 
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'yuHead';  
+    src: url('HanliOldstyle.ttf'); 
+    font-display: swap; 
+}
+
+body {
+    font-family: 'yu', serif;
+}
+
+/* 或者，只应用到标题 (让菜名更像书法) */
+h1, h2, h3, h4 {
+    font-family: 'yuHead', serif;
+}
+
