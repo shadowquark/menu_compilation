@@ -15,10 +15,9 @@
 }
 
 body {
-    font-family: 'yu', serif;
+    font-family: 'yuHead', serif;
 }
 
-/* 或者，只应用到标题 (让菜名更像书法) */
 h1, h2, h3, h4 {
     font-family: 'yuHead', serif;
 }
