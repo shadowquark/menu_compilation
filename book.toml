@@ -6,4 +6,5 @@ language = "zh"
 default-theme = "dark" 
 preferred-dark-theme = "ayu"
 fold = {enable = true, level = 1}
+additional-css = ["book.css"]
 
