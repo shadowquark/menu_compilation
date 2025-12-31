@@ -4,6 +4,7 @@
 - [第一编　大菜系](chapter1.md)
     - [第一章　川菜](test1.md)
         - [宫保](test2.md)
+        - [海味类](./sichuan/haiwei.md)
     - [第二章　鲁菜](test3.md)
         - [锅塌](test4.md)
     - [第三章　淮扬菜](test5.md)
