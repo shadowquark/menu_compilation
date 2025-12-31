@@ -14,6 +14,12 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'yuSide';
+    src: url('qiji-fallback.ttf') format('truetype');
+    font-display: swap;
+}
+
 body {
     font-family: 'yu', serif !important;
 }
@@ -23,6 +29,6 @@ h1, h2, h3, h4 {
 }
 
 .sidebar {
-    font-family: 'yuHead', serif !important;
+    font-family: 'yuSide', serif !important;
 }
 
