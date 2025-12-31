@@ -33,3 +33,7 @@ h1, h2, h3, h4 {
     font-size: 18px !important;
 }
 
+.sidebar .chapter-item strong {
+    display: none;
+}
+
