@@ -3,8 +3,8 @@ title = "食单集注"
 language = "zh"
 
 [output.html]
-fold = {enable = true, level = 1}
 default-theme = "dark" 
 preferred-dark-theme = "ayu"
 section-depth = 4
+fold = {enable = true, level = 1}
 
