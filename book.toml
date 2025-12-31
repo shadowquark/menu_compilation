@@ -5,6 +5,5 @@ language = "zh"
 [output.html]
 default-theme = "dark" 
 preferred-dark-theme = "ayu"
-section-depth = 4
 fold = {enable = true, level = 1}
 
