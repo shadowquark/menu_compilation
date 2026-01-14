@@ -37,3 +37,9 @@ h1, h2, h3, h4 {
     display: none;
 }
 
+/* Improve spacing between CJK and Latin characters where supported */
+/* Use Gecko prefix for Firefox and the unprefixed property where available. */
+body, p, li, h1, h2, h3, h4, h5, h6 {
+    -moz-text-autospace: ideograph-numeric;
+    text-autospace: normal;
+}
