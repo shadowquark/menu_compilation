@@ -1,6 +1,6 @@
 [book]
 title = "食单集注"
-language = "zh"
+language = "zh-Hans"
 
 [output.html]
 default-theme = "dark" 
