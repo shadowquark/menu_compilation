@@ -25,6 +25,8 @@ jobs:
         uses: peaceiris/actions-mdbook@v2
         with:
           mdbook-version: 'latest'
+      - name: Install mdbook-fuse
+        run: cargo install mdbook-fuse
       - name: Build Book
         run: mdbook build
       - name: Setup Pages
