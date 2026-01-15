@@ -9,9 +9,17 @@ fold = {enable = true, level = 1}
 additional-css = ["book.css"]
 
 [output.html.search]
-enable = false
-
-[output.infisearch]
 enable = true
-lang = "chinese"
+# 限制搜索結果數量
+limit-results = 30
+# 重要：開啟此選項。
+# 這會讓搜索引擎將多個關鍵詞之間的邏輯視為 AND，
+# 對於中文來說，它有助於改善在未正確分詞情況下的匹配效果。
+use-boolean-and = true
+# 提升標題權重，讓標題匹配的結果排在前面
+boost-title = 2
+boost-hierarchy = 1
+boost-paragraph = 1
+expand = true
+heading-split-level = 3
 
