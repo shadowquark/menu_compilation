@@ -7,9 +7,10 @@ default-theme = "dark"
 preferred-dark-theme = "ayu"
 fold = {enable = true, level = 1}
 additional-css = ["book.css"]
-search = false
+
+[output.html.search]
+enable = false
 
 [output.infisearch]
-# 啟用中文分詞支持
 lang = "chinese" 
 
