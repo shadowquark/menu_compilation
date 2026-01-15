@@ -7,22 +7,9 @@ default-theme = "dark"
 preferred-dark-theme = "ayu"
 fold = {enable = true, level = 1}
 additional-css = ["book.css"]
-git-repository-url = "https://github.com/shadowquark/menu_compilation"
 search = false
 
-[preprocessor.fuse]
-command = "mdbook-fuse"
-
-[preprocessor.fuse.config]
-shouldSort = true
-# 閾值：0.0 需要完全匹配，1.0 匹配任何內容。
-# 對於中文，0.4 - 0.6 通常比較合適，允許一定程度的模糊
-threshold = 0.6 
-# 查找位置：設置為 0 表示從開頭查找，這對標題匹配很有用
-location = 0
-# 距離：決定了匹配內容與 location 的距離。
-# 中文文章較長，建議設大一點 (如 1000)，或者為了性能設小一點
-distance = 100
-# 最小字符長度：設置為 1 確保單個漢字也能被搜到
-minMatchCharLength = 1
+[output.infisearch]
+# 啟用中文分詞支持
+lang = "chinese" 
 
