@@ -11,6 +11,3 @@ additional-css = ["book.css"]
 [output.html.search]
 enable = false
 
-[output.infisearch]
-lang = "chinese" 
-
