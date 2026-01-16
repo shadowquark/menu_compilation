@@ -1,10 +1,11 @@
 [book]
 title = "食单集注"
-language = "zh-Hans"
+language = "zh"
 
 [output.html]
 default-theme = "dark" 
 preferred-dark-theme = "ayu"
 fold = {enable = true, level = 1}
 additional-css = ["book.css"]
+additional-js = ["src/fzf.umd.js", "src/elasticlunr.js"]
 
