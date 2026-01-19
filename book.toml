@@ -10,6 +10,6 @@ additional-css = ["book.css"]
 additional-js = ["src/fzf.umd.js", "src/elasticlunr.js"]
 
 [output.html.search]
-enable = true            # enables the search feature
-limit-results = 1000       # maximum number of search results
+enable = true
+limit-results = 1000
 
