@@ -28,7 +28,7 @@ jobs:
       - name: Build Book
         run: |
           mdbook build
-          cp book/src/assets/*.ttf src/assets
+          cp /home/runner/work/menu_compilation/menu_compilation/src/assets/*.ttf /home/runner/work/menu_compilation/menu_compilation/book/src/assets
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
