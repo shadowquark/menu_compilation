@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'yu';
-    src: url('../assets/FZXSSK.ttf') format('truetype');
+    src: url('FZXSSK.ttf') format('truetype');
     font-display: block;
 }
 
