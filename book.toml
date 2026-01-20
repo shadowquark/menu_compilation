@@ -6,8 +6,8 @@ language = "zh"
 default-theme = "dark" 
 preferred-dark-theme = "ayu"
 fold = {enable = true, level = 1}
-additional-css = ["book.css"]
-additional-js = ["src/fzf.umd.js", "src/elasticlunr.js"]
+additional-css = ["src/assets/book.css"]
+additional-js = ["src/assets/fzf.umd.js", "src/assets/elasticlunr.js"]
 
 [output.html.search]
 enable = true
