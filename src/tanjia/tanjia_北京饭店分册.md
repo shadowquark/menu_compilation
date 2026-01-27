@@ -874,7 +874,7 @@
 
 <table><tr><td></td><td>主料</td><td>配料</td><td>调料</td><td>重量</td><td>蛋白质</td><td>脂肪</td><td>糖</td><td>总热量(千卡)</td></tr><tr><td>1</td><td>鱼 肚(干)</td><td></td><td></td><td>150</td><td>126</td><td></td><td></td><td>504</td></tr><tr><td>2</td><td></td><td></td><td>鸡清汤</td><td>700</td><td></td><td></td><td></td><td></td></tr><tr><td>3</td><td></td><td>油菜心</td><td></td><td>250</td><td>4</td><td></td><td>6</td><td>40</td></tr><tr><td>4</td><td></td><td></td><td>鸡油</td><td>5</td><td></td><td>5</td><td></td><td>45</td></tr><tr><td>5</td><td></td><td></td><td>白糖</td><td>2.5</td><td></td><td></td><td>2.5</td><td>10</td></tr><tr><td>6</td><td></td><td>火腿</td><td></td><td>50</td><td>8</td><td>25</td><td>.</td><td>257</td></tr><tr><td>7</td><td></td><td></td><td>淀粉</td><td>25</td><td></td><td></td><td>25</td><td>100</td></tr><tr><td></td><td>合计</td><td></td><td></td><td></td><td>138</td><td>30</td><td>33.5</td><td>956</td></tr></table>  
 
-##  干贝广肚  
+## 干贝广肚  
 
 ### 原料  
 
