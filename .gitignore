@@ -1,1 +1,5 @@
 .DS_Store
+/book/
+/.tools/
+/.preview/
+__pycache__/

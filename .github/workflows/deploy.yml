@@ -24,11 +24,12 @@ jobs:
       - name: Install mdBook
         uses: peaceiris/actions-mdbook@v2
         with:
-          mdbook-version: 'latest'
+          mdbook-version: '0.5.4'
       - name: Build Book
         run: |
+          python3 scripts/build_pages.py
           mdbook build
-          cp src/assets/*.ttf book/src/assets
+          python3 scripts/validate_book.py
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
