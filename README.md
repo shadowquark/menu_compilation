@@ -18,6 +18,16 @@
 
 推送 `master` 分支后，GitHub Actions 会生成页面、构建并检查链接，再部署到 GitHub Pages。
 
+## 字体构建
+
+原始字体保存在 `fonts/`，网页通过三份 WOFF2 子集加载原有字形，继续使用 `font-display: block`。原始 TTF 不会复制到网站发布目录。
+
+每次 `mdbook build` 或 `mdbook serve` 都会在 include 展开后自动统计正文、标题、目录及固定界面的用字，生成 `src/assets/fonts/` 和 `src/assets/fonts.css`。新增文字会自动更新相应字体；没有变化的字体复用缓存。预览也会监测 `fonts/` 与 `scripts/` 的变化。字体文件名包含内容哈希，字体更新后会使用新的 URL。
+
+预览脚本会检查固定版本的依赖，必要时在 `.tools/font-env` 创建隔离环境。手工构建时，可先在项目目录执行 `source scripts/font_env.sh`，再运行 mdBook；也可在自己的 Python 环境中安装 `requirements-fonts.txt`。
+
+构建后运行 `python3 scripts/build_fonts.py --check` 可检查字体文件及字符覆盖；`scripts/validate_book.py` 也包含此校验，并检查发布目录中不再包含 TTF。`src/assets/fonts/manifest.json` 记录各字体的体积、字符覆盖和原字库未收录的字符，后者继续使用原有备用字体。生成文件已加入 `.gitignore`，无需手工修改或提交。
+
 ## 参考书目
   1. 北京饭店名菜谱
   2. 上海家常菜_李伯荣
