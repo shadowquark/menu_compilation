@@ -19,6 +19,7 @@ if [[ ! -x "$mdbook_bin" ]]; then
     rm -f "$mdbook_archive"
     trap - EXIT
 fi
+source "$project_dir/scripts/font_env.sh"
 python3 scripts/build_pages.py
 preview_host="${MENU_PREVIEW_HOST:-127.0.0.1}"
 exec "$mdbook_bin" serve -n "$preview_host" -p 3000 "$@"

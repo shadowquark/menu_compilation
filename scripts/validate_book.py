@@ -10,6 +10,7 @@ import tomllib
 from urllib.parse import unquote, urlsplit
 
 from build_pages import ROOT, SRC, load_pages
+from build_fonts import OUTPUT as FONT_OUTPUT, validate_fonts
 
 
 class Document(HTMLParser):
@@ -36,6 +37,13 @@ def main():
     site_path = urlsplit(config.get("output", {}).get("html", {}).get("site-url", "/")).path
     pages = load_pages()
     errors = []
+    fonts = validate_fonts()
+    for font in fonts["fonts"]:
+        target = build / "assets/fonts" / font["file"]
+        if not target.is_file():
+            errors.append(f"Missing published WOFF2: {font['file']}")
+    if any(build.rglob("*.ttf")):
+        errors.append("The published book still contains original TTF files")
     for page in pages:
         source = (SRC / page.path).read_text()
         if len(re.findall(r"^#[ \t]+", source, re.M)) != 1:

@@ -4,6 +4,12 @@ language = "zh"
 
 [build]
 create-missing = false
+extra-watch-dirs = ["fonts", "scripts"]
+
+[preprocessor.fonts]
+command = "python3 scripts/build_fonts.py"
+after = ["links", "index"]
+renderers = ["html"]
 
 [output.html]
 default-theme = "light"
@@ -11,7 +17,7 @@ preferred-dark-theme = "ayu"
 fold = {enable = true, level = 4}
 no-section-label = true
 sidebar-header-nav = false
-additional-css = ["src/assets/book.css", "src/assets/layout.css"]
+additional-css = ["src/assets/fonts.css", "src/assets/book.css", "src/assets/layout.css"]
 additional-js = ["src/assets/fzf.umd.js", "src/assets/elasticlunr.js", "src/assets/navigation.js"]
 
 [output.html.search]

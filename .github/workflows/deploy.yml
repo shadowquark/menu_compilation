@@ -21,12 +21,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: requirements-fonts.txt
+      - name: Install font build dependencies
+        run: python3 -m pip install -r requirements-fonts.txt
       - name: Install mdBook
         uses: peaceiris/actions-mdbook@v2
         with:
           mdbook-version: '0.5.4'
       - name: Build Book
         run: |
+          python3 -m unittest discover -s tests -p 'test_*.py'
           python3 scripts/build_pages.py
           mdbook build
           python3 scripts/validate_book.py

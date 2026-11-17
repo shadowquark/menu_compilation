@@ -3,3 +3,5 @@
 /.tools/
 /.preview/
 __pycache__/
+/src/assets/fonts/
+/src/assets/fonts.css
