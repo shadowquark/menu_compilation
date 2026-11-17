@@ -1,26 +1,117 @@
 # 蔬菜类
 
-| | | | | |
-|--- |--- |--- |--- |---|
-| [干煸苦瓜](干煸苦瓜.md)| [烧酿苦瓜](烧酿苦瓜.md)| [花菇冬笋卷](花菇冬笋卷.md)| [干烧冬笋](干烧冬笋.md)| [锅贴冬笋](锅贴冬笋.md)|
-| [云腿冬瓜夹](云腿冬瓜夹.md)| [酿菜花](酿菜花.md)| [干贝葵菜](干贝葵菜.md)| [鸡油冬笋衣](鸡油冬笋衣.md)| [地地菜春笋](地地菜春笋.md)|
-| [白油葱笋](白油葱笋.md)| [蚕豆春笋](蚕豆春笋.md)| [酿嫩冬瓜](酿嫩冬瓜.md)| [干炒扁豆](干炒扁豆.md)| [蟹黄笋尖](蟹黄笋尖.md)|
-| [网油白菜](网油白菜.md)| [鱼丝菠菜](鱼丝菠菜.md)| [烩鸡蒙葵菜](烩鸡蒙葵菜.md)| [海茸刷把笋](海茸刷把笋.md)| [炒时香菜](炒时香菜.md)|
-| [干贝凤尾菜头](干贝凤尾菜头.md)| [酱烧鲜茄](酱烧鲜茄.md)| [鱼香茄饼](鱼香茄饼.md)| [鱼香紫菜苔](鱼香紫菜苔.md)| [三丝冬瓜燕](三丝冬瓜燕.md)|
-| [蘑菇凤尾](蘑菇凤尾.md)| [干贝银球](干贝银球.md)| [开水白菜](开水白菜.md)| [鸡皮冬笋](鸡皮冬笋.md)| [白油慈笋](白油慈笋.md)|
-| [金钩青菜心](金钩青菜心.md)| [干煸冬笋](干煸冬笋.md)| [金钱笋塔](金钱笋塔.md)| [酿烧苦瓜](酿烧苦瓜.md)| [三丝苦瓜汤](三丝苦瓜汤.md)|
-| [炝炒黄豆芽](炝炒黄豆芽.md)| [三色炒掐菜](三色炒掐菜.md)| [烩鸡蒙掐菜](烩鸡蒙掐菜.md)| [迎春花冬瓜圆](迎春花冬瓜圆.md)| [鱼香冬瓜](鱼香冬瓜.md)|
-| [明虾烧白菜](明虾烧白菜.md)| [白菜虾包](白菜虾包.md)| [千贝玉兰片](千贝玉兰片.md)| [干煸云豆](干煸云豆.md)| [龙眼萝卜卷](龙眼萝卜卷.md)|
-| [炒野鸡丝](炒野鸡丝.md)| [香菇橄榄莴笋](香菇橄榄莴笋.md)| [蕃茄炒嫩蛋](蕃茄炒嫩蛋.md)| [鱼香煎蛋](鱼香煎蛋.md)| [绍子蒸嫩蛋](绍子蒸嫩蛋.md)|
-| [云腿炒蛋](云腿炒蛋.md)| [白汁蛋皮肉卷](白汁蛋皮肉卷.md)| [白汁酿凤蛋](白汁酿凤蛋.md)| [金腿油菜心](金腿油菜心.md)| [鸡油素三元](鸡油素三元.md)|
-| [鸡油两色菜心](鸡油两色菜心.md)| [白汁金腿冬瓜夹](白汁金腿冬瓜夹.md)| [珠柱冬瓜方](珠柱冬瓜方.md)| [鲜蘑冬瓜](鲜蘑冬瓜.md)| [麻辣蚕豆](麻辣蚕豆.md)|
-| [椒盐蚕豆](椒盐蚕豆.md)| [拌菜头丝](拌菜头丝.md)| [蚕豆凤脯](蚕豆凤脯.md)| [蚕豆冬笋](蚕豆冬笋.md)| [火腿豌豆](火腿豌豆.md)|
-| [豌豆烩鱼羹](豌豆烩鱼羹.md)| [口蘑四季豆](口蘑四季豆.md)| [糊辣鸡米季豆](糊辣鸡米季豆.md)| [蟹肉四季豆](蟹肉四季豆.md)| [蒜泥茄条](蒜泥茄条.md)|
-| [鱼香茄花](鱼香茄花.md)| [酸菜青元汤](酸菜青元汤.md)| [炸椒盐口蘑](炸椒盐口蘑.md)| [红烧平菇](红烧平菇.md)| [云腿平菇汤](云腿平菇汤.md)|
-| [白汁酿冬菇](白汁酿冬菇.md)| [鲜蘑白菜心](鲜蘑白菜心.md)| [瑶柱白菜心](瑶柱白菜心.md)| [油菜鸡米](油菜鸡米.md)| [软炸冬菇](软炸冬菇.md)|
-| [白油冬笋](白油冬笋.md)| [鲜蘑兰笋](鲜蘑兰笋.md)| [酱烧冬笋](酱烧冬笋.md)| [鸡油兰片](鸡油兰片.md)| [小白菜芋头](小白菜芋头.md)|
-| [珊瑚芋头](珊瑚芋头.md)| [鱼香油菜苔](鱼香油菜苔.md)| [糊辣油菜心](糊辣油菜心.md)| [素炒白菜心](素炒白菜心.md)| [鱼香茄饼过江](鱼香茄饼过江.md)|
-| [干煸四季豆](干煸四季豆.md)| [菜头炒肉丝](菜头炒肉丝.md)| [家常菜头](家常菜头.md)| [鲜蘑菜头](鲜蘑菜头.md)| [菜头肉片汤](菜头肉片汤.md)|
-| [金钩凤尾](金钩凤尾.md)| [瑶柱素烩](瑶柱素烩.md)| [红珠玉笋](红珠玉笋.md)| [鱼香番茄过江](鱼香番茄过江.md)| [鲜蘑冬瓜圆](鲜蘑冬瓜圆.md)|
-| [猴头蘑油菜心](猴头蘑油菜心.md)| [挑柱油菜心](挑柱油菜心.md)| [明珠油菜心](明珠油菜心.md)| [干烧草菇](干烧草菇.md)| [鹤蛋草菇凤尾](鹤蛋草菇凤尾.md)|
-| [虎皮鹌鹑蛋](虎皮鹌鹑蛋.md)| [红珠鹌蛋玉笋](红珠鹌蛋玉笋.md)
+<div class="recipe-filter" hidden>
+<input id="category-filter" type="search" placeholder="搜索菜名" aria-label="搜索菜名" autocomplete="off" aria-controls="category-recipes">
+<span id="category-result-count" role="status"></span>
+</div>
+
+<ul id="category-recipes" class="recipe-grid">
+<li><a href="%E5%B9%B2%E7%85%B8%E8%8B%A6%E7%93%9C.html">干煸苦瓜</a></li>
+<li><a href="%E7%83%A7%E9%85%BF%E8%8B%A6%E7%93%9C.html">烧酿苦瓜</a></li>
+<li><a href="%E8%8A%B1%E8%8F%87%E5%86%AC%E7%AC%8B%E5%8D%B7.html">花菇冬笋卷</a></li>
+<li><a href="%E5%B9%B2%E7%83%A7%E5%86%AC%E7%AC%8B.html">干烧冬笋</a></li>
+<li><a href="%E9%94%85%E8%B4%B4%E5%86%AC%E7%AC%8B.html">锅贴冬笋</a></li>
+<li><a href="%E4%BA%91%E8%85%BF%E5%86%AC%E7%93%9C%E5%A4%B9.html">云腿冬瓜夹</a></li>
+<li><a href="%E9%85%BF%E8%8F%9C%E8%8A%B1.html">酿菜花</a></li>
+<li><a href="%E5%B9%B2%E8%B4%9D%E8%91%B5%E8%8F%9C.html">干贝葵菜</a></li>
+<li><a href="%E9%B8%A1%E6%B2%B9%E5%86%AC%E7%AC%8B%E8%A1%A3.html">鸡油冬笋衣</a></li>
+<li><a href="%E5%9C%B0%E5%9C%B0%E8%8F%9C%E6%98%A5%E7%AC%8B.html">地地菜春笋</a></li>
+<li><a href="%E7%99%BD%E6%B2%B9%E8%91%B1%E7%AC%8B.html">白油葱笋</a></li>
+<li><a href="%E8%9A%95%E8%B1%86%E6%98%A5%E7%AC%8B.html">蚕豆春笋</a></li>
+<li><a href="%E9%85%BF%E5%AB%A9%E5%86%AC%E7%93%9C.html">酿嫩冬瓜</a></li>
+<li><a href="%E5%B9%B2%E7%82%92%E6%89%81%E8%B1%86.html">干炒扁豆</a></li>
+<li><a href="%E8%9F%B9%E9%BB%84%E7%AC%8B%E5%B0%96.html">蟹黄笋尖</a></li>
+<li><a href="%E7%BD%91%E6%B2%B9%E7%99%BD%E8%8F%9C.html">网油白菜</a></li>
+<li><a href="%E9%B1%BC%E4%B8%9D%E8%8F%A0%E8%8F%9C.html">鱼丝菠菜</a></li>
+<li><a href="%E7%83%A9%E9%B8%A1%E8%92%99%E8%91%B5%E8%8F%9C.html">烩鸡蒙葵菜</a></li>
+<li><a href="%E6%B5%B7%E8%8C%B8%E5%88%B7%E6%8A%8A%E7%AC%8B.html">海茸刷把笋</a></li>
+<li><a href="%E7%82%92%E6%97%B6%E9%A6%99%E8%8F%9C.html">炒时香菜</a></li>
+<li><a href="%E5%B9%B2%E8%B4%9D%E5%87%A4%E5%B0%BE%E8%8F%9C%E5%A4%B4.html">干贝凤尾菜头</a></li>
+<li><a href="%E9%85%B1%E7%83%A7%E9%B2%9C%E8%8C%84.html">酱烧鲜茄</a></li>
+<li><a href="%E9%B1%BC%E9%A6%99%E8%8C%84%E9%A5%BC.html">鱼香茄饼</a></li>
+<li><a href="%E9%B1%BC%E9%A6%99%E7%B4%AB%E8%8F%9C%E8%8B%94.html">鱼香紫菜苔</a></li>
+<li><a href="%E4%B8%89%E4%B8%9D%E5%86%AC%E7%93%9C%E7%87%95.html">三丝冬瓜燕</a></li>
+<li><a href="%E8%98%91%E8%8F%87%E5%87%A4%E5%B0%BE.html">蘑菇凤尾</a></li>
+<li><a href="%E5%B9%B2%E8%B4%9D%E9%93%B6%E7%90%83.html">干贝银球</a></li>
+<li><a href="%E5%BC%80%E6%B0%B4%E7%99%BD%E8%8F%9C.html">开水白菜</a></li>
+<li><a href="%E9%B8%A1%E7%9A%AE%E5%86%AC%E7%AC%8B.html">鸡皮冬笋</a></li>
+<li><a href="%E7%99%BD%E6%B2%B9%E6%85%88%E7%AC%8B.html">白油慈笋</a></li>
+<li><a href="%E9%87%91%E9%92%A9%E9%9D%92%E8%8F%9C%E5%BF%83.html">金钩青菜心</a></li>
+<li><a href="%E5%B9%B2%E7%85%B8%E5%86%AC%E7%AC%8B.html">干煸冬笋</a></li>
+<li><a href="%E9%87%91%E9%92%B1%E7%AC%8B%E5%A1%94.html">金钱笋塔</a></li>
+<li><a href="%E9%85%BF%E7%83%A7%E8%8B%A6%E7%93%9C.html">酿烧苦瓜</a></li>
+<li><a href="%E4%B8%89%E4%B8%9D%E8%8B%A6%E7%93%9C%E6%B1%A4.html">三丝苦瓜汤</a></li>
+<li><a href="%E7%82%9D%E7%82%92%E9%BB%84%E8%B1%86%E8%8A%BD.html">炝炒黄豆芽</a></li>
+<li><a href="%E4%B8%89%E8%89%B2%E7%82%92%E6%8E%90%E8%8F%9C.html">三色炒掐菜</a></li>
+<li><a href="%E7%83%A9%E9%B8%A1%E8%92%99%E6%8E%90%E8%8F%9C.html">烩鸡蒙掐菜</a></li>
+<li><a href="%E8%BF%8E%E6%98%A5%E8%8A%B1%E5%86%AC%E7%93%9C%E5%9C%86.html">迎春花冬瓜圆</a></li>
+<li><a href="%E9%B1%BC%E9%A6%99%E5%86%AC%E7%93%9C.html">鱼香冬瓜</a></li>
+<li><a href="%E6%98%8E%E8%99%BE%E7%83%A7%E7%99%BD%E8%8F%9C.html">明虾烧白菜</a></li>
+<li><a href="%E7%99%BD%E8%8F%9C%E8%99%BE%E5%8C%85.html">白菜虾包</a></li>
+<li><a href="%E5%8D%83%E8%B4%9D%E7%8E%89%E5%85%B0%E7%89%87.html">千贝玉兰片</a></li>
+<li><a href="%E5%B9%B2%E7%85%B8%E4%BA%91%E8%B1%86.html">干煸云豆</a></li>
+<li><a href="%E9%BE%99%E7%9C%BC%E8%90%9D%E5%8D%9C%E5%8D%B7.html">龙眼萝卜卷</a></li>
+<li><a href="%E7%82%92%E9%87%8E%E9%B8%A1%E4%B8%9D.html">炒野鸡丝</a></li>
+<li><a href="%E9%A6%99%E8%8F%87%E6%A9%84%E6%A6%84%E8%8E%B4%E7%AC%8B.html">香菇橄榄莴笋</a></li>
+<li><a href="%E8%95%83%E8%8C%84%E7%82%92%E5%AB%A9%E8%9B%8B.html">蕃茄炒嫩蛋</a></li>
+<li><a href="%E9%B1%BC%E9%A6%99%E7%85%8E%E8%9B%8B.html">鱼香煎蛋</a></li>
+<li><a href="%E7%BB%8D%E5%AD%90%E8%92%B8%E5%AB%A9%E8%9B%8B.html">绍子蒸嫩蛋</a></li>
+<li><a href="%E4%BA%91%E8%85%BF%E7%82%92%E8%9B%8B.html">云腿炒蛋</a></li>
+<li><a href="%E7%99%BD%E6%B1%81%E8%9B%8B%E7%9A%AE%E8%82%89%E5%8D%B7.html">白汁蛋皮肉卷</a></li>
+<li><a href="%E7%99%BD%E6%B1%81%E9%85%BF%E5%87%A4%E8%9B%8B.html">白汁酿凤蛋</a></li>
+<li><a href="%E9%87%91%E8%85%BF%E6%B2%B9%E8%8F%9C%E5%BF%83.html">金腿油菜心</a></li>
+<li><a href="%E9%B8%A1%E6%B2%B9%E7%B4%A0%E4%B8%89%E5%85%83.html">鸡油素三元</a></li>
+<li><a href="%E9%B8%A1%E6%B2%B9%E4%B8%A4%E8%89%B2%E8%8F%9C%E5%BF%83.html">鸡油两色菜心</a></li>
+<li><a href="%E7%99%BD%E6%B1%81%E9%87%91%E8%85%BF%E5%86%AC%E7%93%9C%E5%A4%B9.html">白汁金腿冬瓜夹</a></li>
+<li><a href="%E7%8F%A0%E6%9F%B1%E5%86%AC%E7%93%9C%E6%96%B9.html">珠柱冬瓜方</a></li>
+<li><a href="%E9%B2%9C%E8%98%91%E5%86%AC%E7%93%9C.html">鲜蘑冬瓜</a></li>
+<li><a href="%E9%BA%BB%E8%BE%A3%E8%9A%95%E8%B1%86.html">麻辣蚕豆</a></li>
+<li><a href="%E6%A4%92%E7%9B%90%E8%9A%95%E8%B1%86.html">椒盐蚕豆</a></li>
+<li><a href="%E6%8B%8C%E8%8F%9C%E5%A4%B4%E4%B8%9D.html">拌菜头丝</a></li>
+<li><a href="%E8%9A%95%E8%B1%86%E5%87%A4%E8%84%AF.html">蚕豆凤脯</a></li>
+<li><a href="%E8%9A%95%E8%B1%86%E5%86%AC%E7%AC%8B.html">蚕豆冬笋</a></li>
+<li><a href="%E7%81%AB%E8%85%BF%E8%B1%8C%E8%B1%86.html">火腿豌豆</a></li>
+<li><a href="%E8%B1%8C%E8%B1%86%E7%83%A9%E9%B1%BC%E7%BE%B9.html">豌豆烩鱼羹</a></li>
+<li><a href="%E5%8F%A3%E8%98%91%E5%9B%9B%E5%AD%A3%E8%B1%86.html">口蘑四季豆</a></li>
+<li><a href="%E7%B3%8A%E8%BE%A3%E9%B8%A1%E7%B1%B3%E5%AD%A3%E8%B1%86.html">糊辣鸡米季豆</a></li>
+<li><a href="%E8%9F%B9%E8%82%89%E5%9B%9B%E5%AD%A3%E8%B1%86.html">蟹肉四季豆</a></li>
+<li><a href="%E8%92%9C%E6%B3%A5%E8%8C%84%E6%9D%A1.html">蒜泥茄条</a></li>
+<li><a href="%E9%B1%BC%E9%A6%99%E8%8C%84%E8%8A%B1.html">鱼香茄花</a></li>
+<li><a href="%E9%85%B8%E8%8F%9C%E9%9D%92%E5%85%83%E6%B1%A4.html">酸菜青元汤</a></li>
+<li><a href="%E7%82%B8%E6%A4%92%E7%9B%90%E5%8F%A3%E8%98%91.html">炸椒盐口蘑</a></li>
+<li><a href="%E7%BA%A2%E7%83%A7%E5%B9%B3%E8%8F%87.html">红烧平菇</a></li>
+<li><a href="%E4%BA%91%E8%85%BF%E5%B9%B3%E8%8F%87%E6%B1%A4.html">云腿平菇汤</a></li>
+<li><a href="%E7%99%BD%E6%B1%81%E9%85%BF%E5%86%AC%E8%8F%87.html">白汁酿冬菇</a></li>
+<li><a href="%E9%B2%9C%E8%98%91%E7%99%BD%E8%8F%9C%E5%BF%83.html">鲜蘑白菜心</a></li>
+<li><a href="%E7%91%B6%E6%9F%B1%E7%99%BD%E8%8F%9C%E5%BF%83.html">瑶柱白菜心</a></li>
+<li><a href="%E6%B2%B9%E8%8F%9C%E9%B8%A1%E7%B1%B3.html">油菜鸡米</a></li>
+<li><a href="%E8%BD%AF%E7%82%B8%E5%86%AC%E8%8F%87.html">软炸冬菇</a></li>
+<li><a href="%E7%99%BD%E6%B2%B9%E5%86%AC%E7%AC%8B.html">白油冬笋</a></li>
+<li><a href="%E9%B2%9C%E8%98%91%E5%85%B0%E7%AC%8B.html">鲜蘑兰笋</a></li>
+<li><a href="%E9%85%B1%E7%83%A7%E5%86%AC%E7%AC%8B.html">酱烧冬笋</a></li>
+<li><a href="%E9%B8%A1%E6%B2%B9%E5%85%B0%E7%89%87.html">鸡油兰片</a></li>
+<li><a href="%E5%B0%8F%E7%99%BD%E8%8F%9C%E8%8A%8B%E5%A4%B4.html">小白菜芋头</a></li>
+<li><a href="%E7%8F%8A%E7%91%9A%E8%8A%8B%E5%A4%B4.html">珊瑚芋头</a></li>
+<li><a href="%E9%B1%BC%E9%A6%99%E6%B2%B9%E8%8F%9C%E8%8B%94.html">鱼香油菜苔</a></li>
+<li><a href="%E7%B3%8A%E8%BE%A3%E6%B2%B9%E8%8F%9C%E5%BF%83.html">糊辣油菜心</a></li>
+<li><a href="%E7%B4%A0%E7%82%92%E7%99%BD%E8%8F%9C%E5%BF%83.html">素炒白菜心</a></li>
+<li><a href="%E9%B1%BC%E9%A6%99%E8%8C%84%E9%A5%BC%E8%BF%87%E6%B1%9F.html">鱼香茄饼过江</a></li>
+<li><a href="%E5%B9%B2%E7%85%B8%E5%9B%9B%E5%AD%A3%E8%B1%86.html">干煸四季豆</a></li>
+<li><a href="%E8%8F%9C%E5%A4%B4%E7%82%92%E8%82%89%E4%B8%9D.html">菜头炒肉丝</a></li>
+<li><a href="%E5%AE%B6%E5%B8%B8%E8%8F%9C%E5%A4%B4.html">家常菜头</a></li>
+<li><a href="%E9%B2%9C%E8%98%91%E8%8F%9C%E5%A4%B4.html">鲜蘑菜头</a></li>
+<li><a href="%E8%8F%9C%E5%A4%B4%E8%82%89%E7%89%87%E6%B1%A4.html">菜头肉片汤</a></li>
+<li><a href="%E9%87%91%E9%92%A9%E5%87%A4%E5%B0%BE.html">金钩凤尾</a></li>
+<li><a href="%E7%91%B6%E6%9F%B1%E7%B4%A0%E7%83%A9.html">瑶柱素烩</a></li>
+<li><a href="%E7%BA%A2%E7%8F%A0%E7%8E%89%E7%AC%8B.html">红珠玉笋</a></li>
+<li><a href="%E9%B1%BC%E9%A6%99%E7%95%AA%E8%8C%84%E8%BF%87%E6%B1%9F.html">鱼香番茄过江</a></li>
+<li><a href="%E9%B2%9C%E8%98%91%E5%86%AC%E7%93%9C%E5%9C%86.html">鲜蘑冬瓜圆</a></li>
+<li><a href="%E7%8C%B4%E5%A4%B4%E8%98%91%E6%B2%B9%E8%8F%9C%E5%BF%83.html">猴头蘑油菜心</a></li>
+<li><a href="%E6%8C%91%E6%9F%B1%E6%B2%B9%E8%8F%9C%E5%BF%83.html">挑柱油菜心</a></li>
+<li><a href="%E6%98%8E%E7%8F%A0%E6%B2%B9%E8%8F%9C%E5%BF%83.html">明珠油菜心</a></li>
+<li><a href="%E5%B9%B2%E7%83%A7%E8%8D%89%E8%8F%87.html">干烧草菇</a></li>
+<li><a href="%E9%B9%A4%E8%9B%8B%E8%8D%89%E8%8F%87%E5%87%A4%E5%B0%BE.html">鹤蛋草菇凤尾</a></li>
+<li><a href="%E8%99%8E%E7%9A%AE%E9%B9%8C%E9%B9%91%E8%9B%8B.html">虎皮鹌鹑蛋</a></li>
+<li><a href="%E7%BA%A2%E7%8F%A0%E9%B9%8C%E8%9B%8B%E7%8E%89%E7%AC%8B.html">红珠鹌蛋玉笋</a></li>
+</ul>
+<p id="category-empty" class="empty-message" hidden>没有找到这个菜名，试试更短的关键词。</p>

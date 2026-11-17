@@ -1,4 +1,23 @@
 # 食单集注
+
+## 本地预览
+
+在项目目录运行 `bash scripts/preview.sh`，然后打开 <http://localhost:3000/>，首页显示序文，可通过食单中的菜系链接进入相应页面。例如：
+
+- 川菜入口：<http://127.0.0.1:3000/sichuan/intro.html>
+- 鸡类食单：<http://127.0.0.1:3000/sichuan/鸡类/index.html>
+- 宫保鸡丁：<http://127.0.0.1:3000/sichuan/鸡类/宫保鸡丁.html>
+
+脚本会使用 `.mdbook-version` 指定的 mdBook（首次下载到 `.tools/`），生成全站页面并启动自动刷新预览。终端按 Ctrl+C 停止。
+
+手机局域网预览：先停止正在运行的预览，再运行 `MENU_PREVIEW_HOST=0.0.0.0 bash scripts/preview.sh`。手机连接同一局域网，在浏览器中打开 `http://电脑的局域网IP:3000/`；页面同样支持自动刷新。
+
+全站统一使用菜系入口、分类食单和菜谱阅读布局。目录默认全部展开，也可手动收起，上级条目随滚动逐级悬停；搜索时隐藏目录树，结果直接显示在搜索框下方。修改 `src/assets/layout.css`、`src/assets/navigation.js` 或页面内容后，浏览器自动刷新。按来源版本跳转后，可通过地址中的锚点分享具体段落。
+
+页面由 `scripts/build_pages.py` 生成，分类和菜名读取 `src/SUMMARY.md`。Notebook 的生成流程也共用这些模板。可运行 `python3 scripts/build_pages.py --check` 检查页面是否已同步；构建后运行 `python3 scripts/validate_book.py` 检查页面、链接和资源。生成过程保留菜谱各来源版本的原文，已有的空白菜谱保持为空。
+
+推送 `master` 分支后，GitHub Actions 会生成页面、构建并检查链接，再部署到 GitHub Pages。
+
 ## 参考书目
   1. 北京饭店名菜谱
   2. 上海家常菜_李伯荣
