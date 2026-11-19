@@ -99,6 +99,13 @@ html .sidebar {
 .directory-results a { display: block; padding: 13px 5px; text-decoration: none; color: var(--fg); }
 .directory-results a:hover { color: var(--sample-accent); }
 .directory-results small { display: block; margin-top: 5px; color: var(--sample-muted); font-size: 10px; }
+.catalog-search { max-width: var(--content-max-width); margin: 0 auto; padding: 22px 46px 0; box-sizing: border-box; }
+.catalog-search #mdbook-searchbar { margin-top: 0; font: 14px/1.6 var(--sample-sans); background: var(--sample-panel); border-color: var(--sample-border); }
+.catalog-search-status { margin: 14px 0 0; color: var(--sample-muted); font: 12px/1.6 var(--sample-sans); }
+.catalog-search #mdbook-searchresults { margin: 0; padding: 0; max-height: min(420px, 50vh); overflow-y: auto; overscroll-behavior-y: contain; font-family: "yuSide", serif; font-size: 14px; }
+.catalog-search #mdbook-searchresults li { margin: 0; padding: 0; }
+.catalog-search #mdbook-searchresults a { color: var(--fg); text-decoration: none; }
+.catalog-search #mdbook-searchresults a:hover { color: var(--sample-accent); }
 .recipe-breadcrumbs {
     display: flex;
     flex-wrap: wrap;
@@ -169,6 +176,7 @@ html .sidebar {
 .recipe-book main .version-jumps ul { margin: 0; padding-left: 1.4em; list-style: disc; line-height: 1.9; }
 .recipe-book main .recipe-version { padding-top: 32px; border-top: 1px solid var(--sample-border); margin-top: 40px; font-size: 23px; }
 @media (max-width: 1200px) {
+    .catalog-search { padding-inline: 28px; }
     .recipe-book .content main { padding-inline: 28px; }
     .recipe-reading-layout { gap: 28px; grid-template-columns: minmax(0, 1fr) 150px; }
     .cuisine-grid, .recipe-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -179,6 +187,7 @@ html .sidebar {
     .recipe-article { width: 100%; }
 }
 @media (max-width: 700px) {
+    .catalog-search { padding: 18px 12px 0; }
     .recipe-book { --page-padding: 10px; }
     .recipe-book .content main { padding: 26px 12px 40px; }
     .recipe-book main h1 { font-size: 35px; margin-bottom: 16px; }
@@ -195,7 +204,7 @@ html .sidebar {
     .recipe-book .recipe-article { font-size: 15px; }
 }
 @media print {
-    .directory-header, .recipe-outline, .version-jumps, .recipe-filter, .recipe-breadcrumbs { display: none; }
+    .directory-header, .catalog-search, .recipe-outline, .version-jumps, .recipe-filter, .recipe-breadcrumbs { display: none; }
     .recipe-reading-layout { display: block; }
     .recipe-book .content main { padding: 0; }
 }

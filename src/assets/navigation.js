@@ -8,6 +8,152 @@
         return node;
     };
     const shortName = text => text.replace(/^第[一二三四五六七八九十]+[编章]\s*/, "");
+    const searchLimit = 50;
+    const searchKey = text => text.trim().toLocaleLowerCase();
+
+    function renderCatalogResults(entries, query, list, status) {
+        const term = searchKey(query);
+        const matches = [];
+        let total = 0;
+        if (term) {
+            for (const entry of entries) {
+                if (!entry.key.includes(term)) continue;
+                total++;
+                if (matches.length < searchLimit) matches.push(entry);
+            }
+        }
+        const fragment = document.createDocumentFragment();
+        for (const entry of matches) {
+            const item = element("li");
+            const link = element("a", "", entry.title);
+            link.href = entry.href;
+            if (entry.context) link.append(element("small", "", entry.context));
+            item.append(link);
+            fragment.append(item);
+        }
+        list.replaceChildren(fragment);
+        status.textContent = !term ? "" : total
+            ? `找到 ${total} 项${total > searchLimit ? `，显示前 ${searchLimit} 项` : ""}`
+            : "没有找到，试试更短的菜名";
+    }
+
+    function observeQuery(input, update) {
+        let composing = false;
+        input.addEventListener("compositionstart", () => { composing = true; });
+        input.addEventListener("compositionend", () => { composing = false; update(); });
+        input.addEventListener("input", event => {
+            if (!composing && !event.isComposing) update();
+        });
+        return () => composing;
+    }
+
+    function setupTopSearch(entries) {
+        const buttons = document.querySelector("#mdbook-menu-bar .left-buttons");
+        const content = document.querySelector("#mdbook-content");
+        if (!buttons || !content) return;
+
+        const button = element("button", "icon-button");
+        button.id = "mdbook-search-toggle";
+        button.type = "button";
+        button.title = "查找菜名或分类（/）";
+        button.setAttribute("aria-label", "查找菜名或分类");
+        button.setAttribute("aria-controls", "mdbook-search-wrapper");
+        button.setAttribute("aria-expanded", "false");
+        button.setAttribute("aria-keyshortcuts", "/ s");
+        button.append(document.querySelector("#recipe-search-icon").content.cloneNode(true));
+        buttons.append(button);
+
+        const wrapper = element("div", "catalog-search");
+        wrapper.id = "mdbook-search-wrapper";
+        wrapper.hidden = true;
+        wrapper.setAttribute("role", "search");
+        wrapper.setAttribute("aria-label", "查找菜名或分类");
+        const form = element("form", "searchbar-outer");
+        form.id = "mdbook-searchbar-outer";
+        const input = element("input");
+        input.id = "mdbook-searchbar";
+        input.type = "search";
+        input.name = "searchbar";
+        input.placeholder = "查找菜名或分类…";
+        input.autocomplete = "off";
+        input.setAttribute("aria-label", "查找菜名或分类");
+        input.setAttribute("aria-controls", "mdbook-searchresults");
+        input.setAttribute("aria-describedby", "mdbook-searchresults-header");
+        form.append(input);
+        const output = element("div");
+        output.id = "mdbook-searchresults-outer";
+        output.hidden = true;
+        const status = element("p", "catalog-search-status");
+        status.id = "mdbook-searchresults-header";
+        status.setAttribute("role", "status");
+        const list = element("ul", "directory-results");
+        list.id = "mdbook-searchresults";
+        output.append(status, list);
+        wrapper.append(form, output);
+        content.prepend(wrapper);
+
+        const syncUrl = () => {
+            const url = new URL(location.href);
+            const query = input.value.trim();
+            if (!wrapper.hidden && query) url.searchParams.set("search", query);
+            else url.searchParams.delete("search");
+            if (url.href !== location.href) history.replaceState(history.state, "", url);
+        };
+        const update = () => {
+            renderCatalogResults(entries, input.value, list, status);
+            output.hidden = !input.value.trim();
+            syncUrl();
+        };
+        const composing = observeQuery(input, update);
+        const show = (visible, focus = false) => {
+            wrapper.hidden = !visible;
+            button.setAttribute("aria-expanded", String(visible));
+            if (visible) {
+                update();
+                if (focus) input.focus();
+            } else syncUrl();
+        };
+        button.addEventListener("click", () => show(wrapper.hidden, true));
+        form.addEventListener("submit", event => {
+            event.preventDefault();
+            if (!composing()) list.querySelector("a")?.click();
+        });
+        const moveFocus = event => {
+            if (event.isComposing || composing() || !["ArrowDown", "ArrowUp"].includes(event.key)) return;
+            const links = [...list.querySelectorAll("a")];
+            if (!links.length) return;
+            event.preventDefault();
+            const index = links.indexOf(document.activeElement);
+            if (event.key === "ArrowUp" && index === 0) input.focus();
+            else {
+                const next = index < 0 ? (event.key === "ArrowDown" ? 0 : links.length - 1)
+                    : Math.min(links.length - 1, index + (event.key === "ArrowDown" ? 1 : -1));
+                links[next].focus();
+            }
+        };
+        input.addEventListener("keydown", moveFocus);
+        list.addEventListener("keydown", moveFocus);
+        document.addEventListener("keydown", event => {
+            if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || event.isComposing) return;
+            const editing = event.target instanceof Element
+                && event.target.closest("input, textarea, select, [contenteditable]");
+            if (!editing && ["/", "s"].includes(event.key.toLowerCase())) {
+                event.preventDefault();
+                show(true, true);
+            } else if (event.key === "Escape" && !wrapper.hidden && !composing()
+                && (!editing || wrapper.contains(event.target))) {
+                event.preventDefault();
+                show(false);
+                button.focus({ preventScroll: true });
+            }
+        });
+        const restore = () => {
+            input.value = new URL(location.href).searchParams.get("search") || "";
+            show(Boolean(input.value.trim()));
+        };
+        window.addEventListener("popstate", restore);
+        restore();
+    }
     const chainFor = link => {
         const chain = [];
         let item = link.closest("li.chapter-item");
@@ -56,16 +202,17 @@
         const sidebar = document.querySelector("#mdbook-sidebar");
         const scrollbox = sidebar?.querySelector(".sidebar-scrollbox");
         const tree = scrollbox?.querySelector("ol.chapter");
-        if (!tree) return [];
+        if (!tree) return { chain: [], entries: [] };
 
         const anchors = [...tree.querySelectorAll(".chapter-link-wrapper > a[href]")];
         const current = anchors.find(link => link.classList.contains("active"));
         const currentChain = current ? chainFor(current) : [];
-        const entries = anchors.map(link => ({
-            title: shortName(link.textContent.trim()),
-            href: link.href,
-            chain: chainFor(link),
-        }));
+        const entries = anchors.map(link => {
+            const title = shortName(link.textContent.trim());
+            const chain = chainFor(link);
+            return { title, key: searchKey(title), href: link.href, chain,
+                context: chain.slice(1, -1).map(a => shortName(a.textContent.trim())).join(" / ") };
+        });
 
         entries.forEach(({ chain }, index) => {
             const link = anchors[index];
@@ -110,36 +257,28 @@
         results.hidden = true;
         scrollbox.append(status, results);
         let directoryScrollTop = 0;
-        filter.addEventListener("input", () => {
-            const query = filter.value.trim().toLocaleLowerCase();
+        const composing = observeQuery(filter, () => {
+            const query = searchKey(filter.value);
             const wasSearching = tree.hidden;
             if (query && !wasSearching) directoryScrollTop = scrollbox.scrollTop;
             tree.hidden = Boolean(query);
             results.hidden = !query;
             status.hidden = !query;
-            results.replaceChildren();
             if (!query) {
+                results.replaceChildren();
                 status.textContent = "";
                 if (wasSearching) scrollbox.scrollTop = directoryScrollTop;
                 return;
             }
-            const matches = entries.filter(entry => entry.title.toLocaleLowerCase().includes(query));
-            status.textContent = matches.length
-                ? `找到 ${matches.length} 项${matches.length > 50 ? "，显示前 50 项" : ""}`
-                : "没有找到，试试更短的菜名";
-            matches.slice(0, 50).forEach(entry => {
-                const item = element("li");
-                const link = element("a", "", entry.title);
-                link.href = entry.href;
-                const context = entry.chain.slice(1, -1).map(a => shortName(a.textContent.trim())).join(" / ");
-                if (context) link.append(element("small", "", context));
-                item.append(link);
-                results.append(item);
-            });
+            renderCatalogResults(entries, query, results, status);
             scrollbox.scrollTop = 0;
         });
         filter.addEventListener("keydown", event => {
             if (event.key === "Escape") {
+                if (event.isComposing || composing()) {
+                    event.stopPropagation();
+                    return;
+                }
                 event.stopPropagation();
                 event.preventDefault();
                 filter.value = "";
@@ -162,7 +301,7 @@
         document.querySelector("#mdbook-sidebar-toggle-anchor")?.addEventListener("change", event => {
             if (event.target.checked && !positioned) requestAnimationFrame(positionCurrent);
         });
-        return currentChain;
+        return { chain: currentChain, entries };
     }
 
     function setupBreadcrumbs(main, chain) {
@@ -275,12 +414,11 @@
         if (!main || location.pathname.endsWith("print.html")) return;
         document.body.classList.add("recipe-site");
         const root = document.querySelector('meta[name="recipe-root"]')?.content || "";
-        const chain = setupDirectory(root);
+        const { chain, entries } = setupDirectory(root);
         setupBreadcrumbs(main, chain);
         setupCategoryFilter();
         if (chain.length >= 4) setupReadingOutline(main);
-        const search = document.querySelector("#mdbook-searchbar");
-        if (search) search.placeholder = "搜索全书内容…";
+        setupTopSearch(entries);
         const toggle = document.querySelector("#mdbook-sidebar-toggle");
         toggle?.setAttribute("aria-label", "展开或收起目录");
         toggle?.setAttribute("title", "展开或收起目录");
