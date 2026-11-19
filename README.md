@@ -14,6 +14,8 @@
 
 全站统一使用菜系入口、分类食单和菜谱阅读布局。目录默认全部展开，也可手动收起，上级条目随滚动逐级悬停；搜索时隐藏目录树，结果直接显示在搜索框下方。修改 `src/assets/layout.css`、`src/assets/navigation.js` 或页面内容后，浏览器自动刷新。按来源版本跳转后，可通过地址中的锚点分享具体段落。
 
+顶部与侧栏共用已加载的目录数据，按菜名或分类标题进行子串查找，不扫描正文，不加载全文索引。两处每次最多显示 50 条结果，并显示菜系与分类路径。顶部支持 `/` 或 `s` 打开、方向键选择、Enter 跳转、Esc 关闭，也支持 `?search=关键词` 链接；中文输入法组合期间暂缓更新。
+
 页面由 `scripts/build_pages.py` 生成，分类和菜名读取 `src/SUMMARY.md`。Notebook 的生成流程也共用这些模板。可运行 `python3 scripts/build_pages.py --check` 检查页面是否已同步；构建后运行 `python3 scripts/validate_book.py` 检查页面、链接和资源。生成过程保留菜谱各来源版本的原文，已有的空白菜谱保持为空。
 
 推送 `master` 分支后，GitHub Actions 会生成页面、构建并检查链接，再部署到 GitHub Pages。
